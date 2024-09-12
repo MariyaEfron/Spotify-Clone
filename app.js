@@ -5,10 +5,10 @@ const music = new Audio("vande.mp3");
 const songs = [
   {
     id: "1",
-    songName: ` Tum Se Hi <br>
-        <div class="subtitle">Mohit Chauhan
+    songName: ` Belevar <br>
+        <div class="subtitle">Insperation
         </div>`,
-    poster: "img/1.jpg",
+    poster: "img/songimg1.jpeg",
   },
   {
     id: "2",
@@ -88,7 +88,7 @@ Array.from(document.getElementsByClassName("songItem")).forEach(
   (element, i) => {
     element.getElementsByTagName("img")[0].src = songs[i].poster;
     element.getElementsByTagName("h5")[0].innerHTML = songs[i].songName;
-  },
+  }
 );
 
 let masterPlay = document.getElementById("masterPlay");
@@ -113,7 +113,7 @@ const makeAllPlays = () => {
     (element) => {
       element.classList.add("bi-play-circle-fill");
       element.classList.remove("bi-pause-circle-fill");
-    },
+    }
   );
 };
 const makeAllBackgrounds = () => {
@@ -156,7 +156,7 @@ Array.from(document.getElementsByClassName("playListPlay")).forEach(
         `${index - 1}`
       ].style.background = "rgb(105, 105, 170, .1)";
     });
-  },
+  }
 );
 
 let currentStart = document.getElementById("currentStart");
